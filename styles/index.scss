@@ -1,6 +1,24 @@
 $navBarBackGroundColor: black;
-$linkANDtextColors: rgb(75, 75, 75);
+$linkANDtextColors: rgb(101, 101, 101);
 $topNavbarColor: rgb(25, 25, 25);
+$albumCardColor: rgb(37, 37, 37);
+$onHoverAlbumColor: rgb(64, 64, 64);
+
+@mixin centerImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+@mixin boxShadowCards {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+@mixin onHoverColor {
+    :hover {
+        background: $onHoverAlbumColor;
+    }
+}
 
 // side-navbar................................................
 div #sideNavBar {
@@ -60,6 +78,7 @@ div #supportNavBar {
 }
 // content div................................................
 div #content {
+    
     background-color: $linkANDtextColors;
     height: 90vh;
     width: 87vw;
@@ -78,4 +97,29 @@ div #footerRow {
     bottom: 0;
     width: 100%;
     height: 10vh;  
+}
+
+//content cards................................................
+
+#musicCards {
+    @include onHoverColor();
+    background: $albumCardColor;
+    @include boxShadowCards();
+    h5 {
+        color: $linkANDtextColors;
+        margin: 0;
+    }    
+    img {
+        @include centerImg();
+        @include boxShadowCards();
+        border-radius: 10px;
+    }
+}
+
+#musicCardsText {
+    @include onHoverColor();
+    border: none;
+    color: $linkANDtextColors;
+    text-align: start;
+    background-color: $albumCardColor;
 }
