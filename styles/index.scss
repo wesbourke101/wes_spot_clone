@@ -1,0 +1,81 @@
+$navBarBackGroundColor: black;
+$linkANDtextColors: rgb(75, 75, 75);
+$topNavbarColor: rgb(25, 25, 25);
+
+// side-navbar................................................
+div #sideNavBar {
+    background-color: $navBarBackGroundColor;
+    height: 90vh;
+    width: 13vw;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: $navBarBackGroundColor;
+        height: 100%;
+    }
+    li a {
+        display: block;
+        color: $linkANDtextColors;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+    li a:hover {
+        background-color: #555;
+        color: white;
+    }
+}
+//support Nav spacing........................................
+div .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+//support-navbar................................................
+div #supportNavBar {
+    padding-left: 0;
+    padding-right: 0;
+    // background: $linkANDtextColors;
+    width: 100%;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: $topNavbarColor;
+    }
+    li {
+        float: right;
+      }
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    li a:hover {
+        background-color: #111;
+    }
+}
+// content div................................................
+div #content {
+    background-color: $linkANDtextColors;
+    height: 90vh;
+    width: 87vw;
+}
+div #navImage {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: auto;
+}
+//footer................................................
+
+div #footerRow {
+    background-image: linear-gradient(to right, rgb(185, 56, 205) ,rgb(84, 84, 237));
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;  
+}
