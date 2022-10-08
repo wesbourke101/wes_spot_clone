@@ -3,6 +3,7 @@ $linkANDtextColors: rgb(101, 101, 101);
 $topNavbarColor: rgb(25, 25, 25);
 $albumCardColor: rgb(37, 37, 37);
 $onHoverAlbumColor: rgb(64, 64, 64);
+$contentMainDivColor: rgb(33, 33, 33);
 
 @mixin centerImg {
     display: block;
@@ -14,14 +15,19 @@ $onHoverAlbumColor: rgb(64, 64, 64);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
 }
-@mixin onHoverColor {
-    :hover {
-        background: $onHoverAlbumColor;
-    }
+
+@mixin test {
+    display: inline-block;
+    float: none;
 }
 
+
 // side-navbar................................................
+div {
+    display: inline-block;
+}
 div #sideNavBar {
+    
     background-color: $navBarBackGroundColor;
     height: 90vh;
     width: 13vw;
@@ -53,7 +59,7 @@ div .container-fluid {
 div #supportNavBar {
     padding-left: 0;
     padding-right: 0;
-    // background: $linkANDtextColors;
+    
     width: 100%;
     ul {
         list-style-type: none;
@@ -77,8 +83,10 @@ div #supportNavBar {
     }
 }
 // content div................................................
+#firstContentDiv {
+    background-color: $contentMainDivColor;
+}
 div #content {
-    
     background-color: $linkANDtextColors;
     height: 90vh;
     width: 87vw;
@@ -89,22 +97,26 @@ div #navImage {
     margin-left: 1rem;
     margin-right: auto;
 }
+
+#catagoryNames {
+    background-color: rgb(247, 245, 245);
+}
 //footer................................................
 
 div #footerRow {
     background-image: linear-gradient(to right, rgb(185, 56, 205) ,rgb(84, 84, 237));
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
-    height: 10vh;  
+    height: 10%;  
 }
 
 //content cards................................................
 
 #musicCards {
-    @include onHoverColor();
     background: $albumCardColor;
     @include boxShadowCards();
+
     h5 {
         color: $linkANDtextColors;
         margin: 0;
@@ -117,9 +129,23 @@ div #footerRow {
 }
 
 #musicCardsText {
-    @include onHoverColor();
     border: none;
     color: $linkANDtextColors;
     text-align: start;
     background-color: $albumCardColor;
+}
+
+#musicCards:hover {
+    background-color: $onHoverAlbumColor;
+}
+#musicCards:hover #musicCardsText {
+    background-color: $onHoverAlbumColor;
+}
+
+
+//mainRow...........................
+
+#content-div-test {
+    width: 100%;
+    overflow-y: scroll;
 }

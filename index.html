@@ -8,13 +8,14 @@
         <link rel="stylesheet" href="./styles/index.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     </head>
-    <body>
+    <body stlye="overflow: hidden;">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 
-        <div class="container-fluid">
-            <div class="row">
+        <div class="container-fluid" style="position:fixed">
+            <div class="row" id="mainRow">
+
                 <div class="col-sm-2" id="sideNavBar">
                     <img id="navImage" src="./images/Spotify_Logo_CMYK_Green.png" width="150">
                     <ul>
@@ -24,10 +25,13 @@
                         <li><a href="about.asp">About</a></li>
                     </ul>
                 </div>
+
                 <div class="col-sm-10" id="content">
-                    <div class="container-fluid">
-                        <div class="row" id="supportNavRow">
-                            <div class="col-sm" id="supportNavBar">
+
+                    <div class="container-fluid" >
+                    <div class="row" id="supportNavRow">
+                    <div class="col-sm" id="supportNavBar" >
+
                                 <ul>
                                     <li><button type="button" class="btn btn-secondary" style="margin: 1rem;">Login</button></li>
                                     <li><button type="button" class="btn btn-dark" style="margin: 1rem; background: rgb(25, 25, 25); border: none;">Sign up</button></li>
@@ -37,86 +41,159 @@
                                     <li style="margin-top: 1rem"><a href="#contact">Contact</a></li>
                                     <li style="margin-top: 1rem"><a href="#contact">Contact</a></li>
                                 </ul>
-                            </div>
+
                         </div>
-                        <div class="row" id="firstContentDiv">
-                            <div class="col-sm-12" style="padding: 1rem;">
-                                <div class="row">
-                                    <div class="col-sm-2" >
-                                        <h1 class="catagoryNames">Spotify Playlists</h1>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-2">
-                                        <div class="card" id="musicCards">
-                                            <div class="card-body" >
-                                                <img id="albumArt" src="https://www.skillshare.com/blog/wp-content/uploads/2016/06/ScreenShot2020-10-20at11.36.46AM.png">
-                                                <div class="card" id="musicCardsText">
+                        </div>
+
+                        <div class="row" >
+                        <div class="col-sm-12" style="position: fixed;">
+<!-- .............................................................................................................................. -->
+                                <div class="row" id="firstContentDiv"  >
+                                <div class="col-sm-12" style="position: relative; overflow-y: auto; width: 112rem; height: 54.5rem;">
+                                    
+                                        <div class="row">
+                                        <div class="col-sm-2" >
+
+                                            <h1 class="catagoryNames">Spotify Playlists</h1>
+
+                                        </div>
+                                        </div>
+
+                                        <div class="row" style="overflow-x: auto;">
+                                        <div class="col-sm-2">
+
+                                                <div class="card" id="musicCards">
+                                                <div class="card-body" >
+
+                                                        <img id="albumArt" src="https://www.skillshare.com/blog/wp-content/uploads/2016/06/ScreenShot2020-10-20at11.36.46AM.png">
+                                                            
+                                                    <div class="card" id="musicCardsText">
                                                     <div class="card-body" >
+
                                                         <h5 class="card-title">Title</h5>
+
                                                         <p class="card-text">This is about the artist</p>
                                                     </div>
-                                                </div>        
+                                                    </div> 
+
+                                                </div>
+                                                </div>
+                                        </div>    
+        
+                                            <div class="row">
+                                            <div class="col-sm-2" >
+
+                                                <h1 class="catagoryNames">Catagory One</h1>
+
+                                            </div>
                                             </div>
                                         </div>
-                                    </div>    
-                                    <div class="col-sm-2">
-                                        <div class="card" id="musicCards">
-                                            <div class="card-body">
-                                                <h5 class="card-title">This is the body. All things live in a card.</h5>
-                                                <p class="card-text">I just need some filler text to go here. Nothing to see here just keep it moving grovin.</p>
-                                                <a href="#" class="btn btn-primary">Boby Button</a>
+<!-- .............................................................................................................................. -->
+<!-- .............................................................................................................................. -->
+                                        <div class="row" style="overflow-x: auto;">
+                                            <div class="col-sm-2">
+    
+                                                    <div class="card" id="musicCards">
+                                                    <div class="card-body" >
+    
+                                                            <img id="albumArt" src="https://www.skillshare.com/blog/wp-content/uploads/2016/06/ScreenShot2020-10-20at11.36.46AM.png">
+                                                                
+                                                        <div class="card" id="musicCardsText">
+                                                        <div class="card-body" >
+    
+                                                            <h5 class="card-title">Title</h5>
+    
+                                                            <p class="card-text">This is about the artist</p>
+                                                        </div>
+                                                        </div> 
+    
+                                                    </div>
+                                                    </div>
+                                            </div>    
+            
+                                                <div class="row">
+                                                <div class="col-sm-2" >
+    
+                                                    <h1 class="catagoryNames">Catagory One</h1>
+    
+                                                </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <div class="card" id="musicCards">
-                                            <div class="card-body">
-                                                <h5 class="card-title">This is the body. All things live in a card.</h5>
-                                                <p class="card-text">I just need some filler text to go here. Nothing to see here just keep it moving grovin.</p>
-                                                <a href="#" class="btn btn-primary">Boby Button</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <div class="card" id="musicCards">
-                                            <div class="card-body">
-                                                <h5 class="card-title">This is the body. All things live in a card.</h5>
-                                                <p class="card-text">I just need some filler text to go here. Nothing to see here just keep it moving grovin.</p>
-                                                <a href="#" class="btn btn-primary">Boby Button</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <div class="card" id="musicCards">
-                                            <div class="card-body">
-                                                <h5 class="card-title">This is the body. All things live in a card.</h5>
-                                                <p class="card-text">I just need some filler text to go here. Nothing to see here just keep it moving grovin.</p>
-                                                <a href="#" class="btn btn-primary">Boby Button</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <div class="card" id="musicCards">
-                                            <div class="card-body">
-                                                <h5 class="card-title">This is the body. All things live in a card.</h5>
-                                                <p class="card-text">I just need some filler text to go here. Nothing to see here just keep it moving grovin.</p>
-                                                <a href="#" class="btn btn-primary">Boby Button</a>
-                                            </div>
-                                        </div>
-                                    </div>
+<!-- .............................................................................................................................. -->
+<!-- .............................................................................................................................. -->
+                                            <div class="row" style="overflow-x: auto;">
+                                                <div class="col-sm-2">
+        
+                                                        <div class="card" id="musicCards">
+                                                        <div class="card-body" >
+        
+                                                                <img id="albumArt" src="https://www.skillshare.com/blog/wp-content/uploads/2016/06/ScreenShot2020-10-20at11.36.46AM.png">
+                                                                    
+                                                            <div class="card" id="musicCardsText">
+                                                            <div class="card-body" >
+        
+                                                                <h5 class="card-title">Title</h5>
+        
+                                                                <p class="card-text">This is about the artist</p>
+                                                            </div>
+                                                            </div> 
+        
+                                                        </div>
+                                                        </div>
+                                                </div>    
+                
+                                                    <div class="row">
+                                                    <div class="col-sm-2" >
+        
+                                                        <h1 class="catagoryNames">Catagory One</h1>
+        
+                                                    </div>
+                                                    </div>
+                                                </div>
+<!-- .............................................................................................................................. -->
+<!-- .............................................................................................................................. -->
+                                                <div class="row" style="overflow-x: auto;">
+                                                    <div class="col-sm-2">
+            
+                                                            <div class="card" id="musicCards">
+                                                            <div class="card-body" >
+            
+                                                                    <img id="albumArt" src="https://www.skillshare.com/blog/wp-content/uploads/2016/06/ScreenShot2020-10-20at11.36.46AM.png">
+                                                                        
+                                                                <div class="card" id="musicCardsText">
+                                                                <div class="card-body" >
+            
+                                                                    <h5 class="card-title">Title</h5>
+            
+                                                                    <p class="card-text">This is about the artist</p>
+                                                                </div>
+                                                                </div> 
+            
+                                                            </div>
+                                                            </div>
+                                                    </div>    
+                    
+                                                        <div class="row">
+                                                        <div class="col-sm-2" >
+            
+                                                            <h1 class="catagoryNames">Catagory One</h1>
+            
+                                                        </div>
+                                                        </div>
+                                                    </div>
+<!-- .............................................................................................................................. -->
+<!-- .............................................................................................................................. -->
+                                    </div>  
                                 </div>
-                                <div class="row">
-                                    <div class="col-sm-2" >
-                                        <h1 class="catagoryNames">Catagory One</h1>
-                                    </div>
-                                </div>
-                            </div>
-                            
+
+                            </div>            
                         </div>
+
                     </div>
+                    
                 </div>
-            </div>
+
+            </div>        
         </div>
 
         <div class="container-fluid">
@@ -128,8 +205,8 @@
                         </div>  
                     </footer>
                 </div>    
-            </div>    
-        </div>
+            </div>  
+        </div>  
 
     </body>
 </html>
