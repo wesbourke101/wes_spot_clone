@@ -149,3 +149,35 @@ div #footerRow {
     width: 100%;
     overflow-y: scroll;
 }
+
+//footerInfo
+
+#footerInfo {
+    text-align: left;
+    ul {
+        list-style-type: none;
+    }
+    li {
+        margin-top: .5rem;
+        color: rgb(113, 113, 113);
+    }
+    li a {
+        color: rgb(73, 73, 73);
+    }
+}
+
+//social buttons
+
+.button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+  }
+
+  .button5 {border-radius: 50%;}

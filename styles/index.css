@@ -123,4 +123,34 @@ div #footerRow {
 #content-div-test {
   width: 100%;
   overflow-y: scroll;
+}
+
+#footerInfo {
+  text-align: left;
+}
+#footerInfo ul {
+  list-style-type: none;
+}
+#footerInfo li {
+  margin-top: 0.5rem;
+  color: rgb(113, 113, 113);
+}
+#footerInfo li a {
+  color: rgb(73, 73, 73);
+}
+
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+.button5 {
+  border-radius: 50%;
 }/*# sourceMappingURL=index.css.map */
